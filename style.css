@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(243, 188, 188); /* Black behind the image */
+  background-image: url(homepage.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-buttons {
+    position: fixed;
+    top: 40px;
+    left: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;  /* Stack vertically */
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 12px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    width: 120px;
+}
+
+.nav-buttons button {
+    background-color: rgba(255, 255, 255, 0.35);
+    color: #6b3a3a;  /* softer dark brown */
+    border: none;
+    padding: 6px 12px;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Georgia', serif;
+    font-weight: 600;
+    box-shadow: 0 4px 8px rgba(107, 58, 58, 0.3);
+    transition: 
+        background-color 0.3s ease, 
+        color 0.3s ease,
+        transform 0.2s ease,
+        box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.nav-buttons button:hover {
+    background-color: #6b3a3a;
+    color: #fff;
+    transform: translateX(5px);
+    box-shadow: 0 6px 12px rgba(107, 58, 58, 0.6);
+}
+
+
+
+.video-page1 {
+    width: 100%;
+    height: 100vh; /* Ensure the height fills the viewport */
+    background: url(red.jpg);  /* Replace with your image file */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-page .content {
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: makes the content area semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.video-page2 {
+    width: 100%;
+    height: 100vh; /* Ensure the height fills the viewport */
+    background: url(vid2.jpeg);  /* Replace with your image file */
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-page .content {
+    background-color: rgba(255, 255, 255, 0.7); /* Optional: makes the content area semi-transparent */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Make the video fill more of the screen */
+.main-video {
+  width: 80vw;     /* 80% of viewport width */
+  height: auto;    /* maintain aspect ratio */
+  max-height: 80vh; /* maximum height: 80% of screen height */
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3); /* optional visual enhancement */
+}
+
+.message-page {
+  width: 100%;
+  height: 100vh; /* Ensure the height fills the viewport */
+  background: url(crumbpaper.jpg);  /* Replace with your image file */
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-page {
+  width: 100%;
+  height: 100vh;
+  background: url(crumbpaper.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+.content {
+  max-width: 800px;
+  padding: 0;
+  background: none;
+}
+
+.letter {
+  font-size: 1.1rem;
+  font-family: 'Georgia', serif;
+  color: #270c0c;
+  line-height: 1.8;
+  text-align: left;
+  white-space: pre-line;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+}
