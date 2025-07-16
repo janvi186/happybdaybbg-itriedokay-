@@ -138,7 +138,7 @@
 }
 
 .letter {
-  font-size: 1.1rem;
+  font-size: 0.9rem; /* Decreased from 1.1rem */
   font-family: 'Georgia', serif;
   color: #7a0623;
   line-height: 1.8;
@@ -146,3 +146,4 @@
   white-space: pre-line;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
 }
+
